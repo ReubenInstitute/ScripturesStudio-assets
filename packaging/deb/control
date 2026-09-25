@@ -1,0 +1,13 @@
+Package: scripturesstudio-assets
+Version: 0.1
+Section: misc
+Priority: optional
+Architecture: all
+Maintainer: Reuben Institute <reubeninstitute@gmail.com>
+Description: Video/audio/image assets for Reuben Institute's ScripturesStudio
+ Background fog videos, Suno music tracks, cover images, and generated
+ background videos (Midjourney/Kling) used by ScripturesStudio to
+ produce the Psalms and Parashot video series. Editable/growing content,
+ meant to be added to in place (e.g. via ScripturesStudio); it is
+ overwritten on package upgrade, so additions must be committed back to
+ the source repo first.
