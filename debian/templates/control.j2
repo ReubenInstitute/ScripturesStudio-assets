@@ -1,0 +1,10 @@
+Package: {{ pkg }}
+Source: scripturesstudio-assets
+Version: {{ version }}
+Architecture: all
+Maintainer: {{ maintainer }}
+Installed-Size: {{ size_kb }}
+Section: misc
+Priority: optional
+{% if depends %}Depends: {{ depends|join(",\n ") }}
+{% endif %}Description: {{ description }}

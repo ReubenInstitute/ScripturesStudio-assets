@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: scripturesstudio-assets
+Source: https://github.com/ReubenInstitute/ScripturesStudio-assets
+
+Files: *
+Copyright: 2026 Reuben Institute
+License: none
+ Assets copyleft Reuben Institute. No license claimed for third-party
+ generated content (Suno music tracks, Midjourney/Kling video/images).

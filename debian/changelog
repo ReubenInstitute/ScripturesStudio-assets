@@ -1,0 +1,8 @@
+scripturesstudio-assets (1.0) unstable; urgency=medium
+
+  * Switch packaging from a single bundled scripturesstudio-assets deb
+    to one binary package per psalm chapter, plus a common package for
+    shared background assets and a meta package depending on all of
+    them (preserving the scripturesstudio-assets dependency name).
+
+ -- Reuben Institute <reubeninstitute@gmail.com>  Sun, 27 Sep 2026 00:00:00 +0300
