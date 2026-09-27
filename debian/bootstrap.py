@@ -124,10 +124,17 @@ def build_deb(pkg_root, pkg):
 
 
 def stage_files(pkg_root, filenames):
+    os.makedirs(pkg_root, exist_ok=True)
+    os.chmod(pkg_root, 0o755)
     assets_dir = pkg_root + ASSETS_DIR
     os.makedirs(assets_dir, exist_ok=True)
+    for path in [pkg_root, pkg_root + "/var", pkg_root + "/var/lib",
+                 pkg_root + "/var/lib/scripturesstudio", assets_dir]:
+        os.chmod(path, 0o755)
     for name in filenames:
-        shutil.copy(os.path.join(REPO, name), os.path.join(assets_dir, name))
+        dst = os.path.join(assets_dir, name)
+        shutil.copy(os.path.join(REPO, name), dst)
+        os.chmod(dst, 0o644)
 
 
 def build_chapter_package(chapter, filenames):
